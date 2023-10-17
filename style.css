@@ -7,20 +7,19 @@
 .container{
     display: flex;
     width: 100%;
-    background-color: yellow;
     padding: 5px 10px;
     justify-content: space-between;
 }
 
 .left {
     width: 34%;
-    /* height: 200px; */
-    /* border: 2px solid black; */
+    box-shadow: 10px 10px 20px -1px rgba(0,0,0,0.63);
+-webkit-box-shadow: 10px 10px 20px -1px rgba(0,0,0,0.63);
+-moz-box-shadow: 10px 10px 20px -1px rgba(0,0,0,0.63);
 }
 
 .right{
     width: 64%;
-    /* border: 2px solid black; */
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -30,25 +29,74 @@
 .education{
     width: 100%;
     height: 500px;
-    background-color: red;
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    box-shadow: 10px 10px 20px -1px rgba(0,0,0,0.63);
+-webkit-box-shadow: 10px 10px 20px -1px rgba(0,0,0,0.63);
+-moz-box-shadow: 10px 10px 20px -1px rgba(0,0,0,0.63);
 }
 
 .experience{
     width: 100%;
     height: 500px;
-    background-color: cyan;
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 10px 10px 20px -1px rgba(0,0,0,0.63);
+-webkit-box-shadow: 10px 10px 20px -1px rgba(0,0,0,0.63);
+-moz-box-shadow: 10px 10px 20px -1px rgba(0,0,0,0.63);
 }
 
 .photo{
     width: 100%;
     height: 300px;
-    background-color: red;
+    position: relative;
+}
+.photo img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
 }
 
 .info{
     width: 100%;
     height: 700px;
-    background-color: aqua;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.infodiv{
+    width: 95%;
+    height: 20px;
+    border: 2px solid black;
+    border-radius: 50px;
+    background-color: lightgray;
+}
+
+.infodiv div{
+    width: 90%;
+    height: 100%;
+    border-radius: 50px;
+    background-color: rgb(3, 131, 88);
+    text-align: center;
+}
+h4{
+    color: rgb(10, 122, 85);
+}
+footer{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    background-color: rgb(10, 122, 85);
+    box-shadow: 10px 10px 20px -1px rgba(0,0,0,0.63);
+-webkit-box-shadow: 10px 10px 20px -1px rgba(0,0,0,0.63);
+-moz-box-shadow: 10px 10px 20px -1px rgba(0,0,0,0.63);
+
 }
 
 @media only screen and (max-width: 700px) {
@@ -61,6 +109,9 @@
     }
 
     .container .right {
+        width: 100%;
+    }
+    footer{
         width: 100%;
     }
 }
